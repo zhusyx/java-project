@@ -1,7 +1,7 @@
 
 node('linux'){
     stage('Test'){
-        git 'https://github.com/UST-SEIS665/hw10-seis665-03-spring2019-zhusyx'
+        git 'https://github.com/zhusyx/java-project'
         sh 'ant -f test.xml -v'
         junit 'reports/result.xml'
     }
