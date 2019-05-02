@@ -12,7 +12,7 @@ node('linux'){
     }
     
     stage('Deploy'){
-          sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://as10buckettesting'  
+          sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://seis665cz'  
     }
     
     
